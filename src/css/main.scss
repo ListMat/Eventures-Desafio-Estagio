@@ -1,0 +1,122 @@
+@import "global";
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+section {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  padding: 10.7rem 13.3rem;
+  bottom: 9rem;
+
+  @extend .flex-start;
+
+  .text {
+    width: 100%;
+    height: 100%;
+    h1 {
+      font-size: 10.2rem;
+      font-weight: bold;
+      font-family: Poppins, sans-serif;
+      line-height: 110%;
+
+      letter-spacing: -0.03em;
+
+      .orange {
+        color: var(--color-title-span-in-primary);
+      }
+      .white_light {
+        color: var(--color-title--in-primary);
+      }
+      .white_dark {
+        color: var(--color-title-span-on-primary);
+      }
+    }
+    p {
+      font-size: 2.1rem;
+      font-weight: 500;
+      margin: -0.9rem 0 2.9rem 0;
+      max-width: 51rem;
+      letter-spacing: 0.03em;
+      color: var(--color-text-in-primary);
+      span {
+        color: var(--color-title-span-in-primary);
+        font-weight: bold !important;
+      }
+    }
+    button {
+      border: 0;
+      cursor: pointer;
+      border-radius: 0.8rem;
+      padding: 1.9rem 1.5rem;
+      color: var(--color-text-button-in-primary);
+      background-color: var(--color-background-button-in-primary);
+      &:hover {
+        background-color: var(--color-primary-dark);
+      }
+    }
+    button + button {
+      border: 0;
+      cursor: pointer;
+      padding: 1.9rem 1.5rem;
+      text-align: center;
+
+      width: 20rem;
+      margin-left: 1.4rem;
+      color: var(--color-text-button-on-primary);
+      background-color: var(--color-background-button-on-primary);
+      &:hover {
+        background-color: var(--color-secondary-dark);
+      }
+    }
+    section .text {
+      display: grid;
+      grid-template-rows: 350px 1fr;
+      grid-template-columns: repeat(2fr);
+      grid-template-areas:
+        "eVa"
+        "astronaut";
+
+      .text {
+        grid-area: eVa;
+        align-self: center;
+        text-align: left;
+        margin: 0;
+      }
+      img #astronaut-container {
+        grid-area: astronaut;
+        align-self: center;
+        text-align: right;
+        margin: 0;
+        padding-top: 0;
+        position: absolute;
+      }
+    }
+  }
+  footer #logo {
+    padding-top: 500px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    img {
+      flex-direction: column-reverse;
+    }
+  }
+  $layout-breakpoint-small: 960px;
+
+  @media (max-width: $layout-breakpoint-small) {
+    section {
+      img #astronaut-content {
+        display: none;
+      }
+    }
+  }
+}

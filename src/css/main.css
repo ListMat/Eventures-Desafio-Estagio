@@ -1,0 +1,219 @@
+:root {
+  --color-title--in-primary: #dddddd;
+  --color-title-span-in-primary: #ff6109;
+  --color-title-span-on-primary: #ffffff;
+  --color-background-button-in-primary: #ff6e1d;
+  --color-text-button-in-primary: #ffffff;
+  --color-background-button-on-primary: #232323;
+  --color-text-button-on-primary: #ff6e1d;
+  --color-text-in-primary: #cecece;
+  --color-title-secondary: #fffcfa;
+  --color-title-span-in-secondary: #ececec;
+  --color-title-span-on-secondary: #ac85ff;
+  --color-title-span-into-secondary: #7cff3e;
+  --color-title--tertiary: #ac85ff;
+  --color-text-in-tertiary: #cecece;
+  --color-title-primary-h2: #5df463;
+  --color-title-secondary-h2: #5dd9f4;
+  --color-title-tertiary-h2: #f45dd3;
+  --color-title-quartet-h2: #f4b85d;
+  --color-text-complement: #e1e1e1;
+  --color-title--quartet: #faf8ff;
+  --color-text-in-quartet: #cecece;
+  --color-text-base: #6a6180;
+  --color-line-in-white: #e6e6f0;
+  --color-input-background: #f8f8fc;
+  --color-button-text: #ffffff;
+  --color-box-base: #ffffff;
+  --color-box-footer: #fafafc;
+  --color-button-background: #00ff38;
+  font-size: 60%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body,
+#root {
+  height: 100vh;
+}
+
+body {
+  background: url(assets/image/BG.svg) -6vh top no-repeat;
+  z-index: -555;
+}
+
+#root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 500 1.6rem roboto;
+  color: var(--color-text-base);
+}
+
+.container {
+  width: 90vw;
+  max-width: 700px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 60.5%;
+  }
+}
+
+.flex-start, section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  padding: 10.7rem 13.3rem;
+  bottom: 9rem;
+}
+
+section .text {
+  width: 100%;
+  height: 100%;
+}
+
+section .text h1 {
+  font-size: 10.2rem;
+  font-weight: bold;
+  font-family: Poppins, sans-serif;
+  line-height: 110%;
+  letter-spacing: -0.03em;
+}
+
+section .text h1 .orange {
+  color: var(--color-title-span-in-primary);
+}
+
+section .text h1 .white_light {
+  color: var(--color-title--in-primary);
+}
+
+section .text h1 .white_dark {
+  color: var(--color-title-span-on-primary);
+}
+
+section .text p {
+  font-size: 2.1rem;
+  font-weight: 500;
+  margin: -0.9rem 0 2.9rem 0;
+  max-width: 51rem;
+  letter-spacing: 0.03em;
+  color: var(--color-text-in-primary);
+}
+
+section .text p span {
+  color: var(--color-title-span-in-primary);
+  font-weight: bold !important;
+}
+
+section .text button {
+  border: 0;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  padding: 1.9rem 1.5rem;
+  color: var(--color-text-button-in-primary);
+  background-color: var(--color-background-button-in-primary);
+}
+
+section .text button + button {
+  border: 0;
+  cursor: pointer;
+  padding: 1.9rem 1.5rem;
+  text-align: center;
+  width: 20rem;
+  margin-left: 1.4rem;
+  color: var(--color-text-button-on-primary);
+  background-color: var(--color-background-button-on-primary);
+}
+
+section .text .astronaut-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 350px 1fr;
+      grid-template-rows: 350px 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "eVa" "astronaut";
+}
+
+section .text .astronaut-container .text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: eVa;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: left;
+  margin: 0;
+}
+
+section .text .astronaut-container .astronaut img {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: astronaut;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: left;
+  margin: 0;
+  padding-top: 0;
+  position: relative;
+}
+
+section footer #logo {
+  padding-top: 500px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 0;
+  top: 0;
+  left: 0;
+}
+
+section footer #logo img {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+/*# sourceMappingURL=main.css.map */

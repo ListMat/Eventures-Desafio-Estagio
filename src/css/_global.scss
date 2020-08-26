@@ -1,0 +1,105 @@
+:root {
+  // --color-primary-lighter: #9871f5;
+  // --color-primary-light: #916bea;
+  // --color-primary: #8257e5;
+  --color-primary-dark: #f85900;
+  // --color-primary-darker: #6842c2;
+  // --color-secondary: #04d361;
+  --color-secondary-dark: #0b0a0a;
+
+  // Page: Main
+  --color-title--in-primary: #dddddd;
+  --color-title-span-in-primary: #ff6109;
+  --color-title-span-on-primary: #ffffff;
+
+  --color-background-button-in-primary: #ff6e1d;
+  --color-text-button-in-primary: #ffffff;
+
+  --color-background-button-on-primary: #232323;
+  --color-text-button-on-primary: #ff6e1d;
+
+  --color-text-in-primary: #cecece;
+
+  // __________________________________________
+
+  //  Page: Novos desafios
+
+  --color-title-secondary: #fffcfa;
+  --color-title-span-in-secondary: #ececec;
+  --color-title-span-on-secondary: #ac85ff;
+  --color-title-span-into-secondary: #7cff3e;
+  // ____________________________________________
+
+  // Page Nosso serviços
+
+  --color-title--tertiary: #ac85ff;
+  --color-text-in-tertiary: #cecece;
+
+  --color-title-primary-h2: #5df463;
+  --color-title-secondary-h2: #5dd9f4;
+  --color-title-tertiary-h2: #f45dd3;
+  --color-title-quartet-h2: #f4b85d;
+  --color-text-complement: #e1e1e1;
+  // ___________________________
+
+  // Page: Quem somos
+  --color-title--quartet: #faf8ff;
+  --color-text-in-quartet: #cecece;
+  // ________________________________
+
+  // Page: Precisa de um projeto?
+
+  --color-text-base: #6a6180;
+  --color-line-in-white: #e6e6f0;
+  --color-input-background: #f8f8fc;
+  --color-button-text: #ffffff;
+  --color-box-base: #ffffff;
+  --color-box-footer: #fafafc;
+  --color-button-background: #00ff38;
+  // ____________________________________
+
+  font-size: 60%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body,
+#root {
+  height: 100vh;
+}
+
+body {
+  background: url(assets/image/BG.svg) -6vh top no-repeat;
+  z-index: -555;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 500 1.6rem roboto;
+  color: var(--color-text-base);
+}
+
+.container {
+  width: 90vw;
+  max-width: 700px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 60.5%;
+  }
+}
